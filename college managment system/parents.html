@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>college managment system of darshit</title>
+    <style type="text/css">
+        #myid
+        {
+            background-color: #4176AF;
+            width:100%;
+            height:90px;
+        }
+        #gajjar {
+            width: 25%;
+            height: 1280px;
+            background-color: #8E8E8E;
+            position: absolute;
+            right: 10px;
+            top: 70px;
+        }
+        .ggf {
+            font-size: 190%;
+            font-style: italic;
+            color: black;
+            font-weight: 800;
+        }
+        .hh
+        {
+            font-size: 190%;
+            font-family: "Arial Narrow";
+            color: black;
+            font-weight: 800;
+        }
+        div
+        {
+            width:28px;
+            height:5px;
+            background-color: black;
+            margin: 13px 0;
+
+        }
+
+
+        ul li a
+        {
+            color: red;
+            font-weight: bold;
+            font-size: 170%;
+            text-decoration: none;
+
+        }
+
+        ul {
+            margin: 0px;
+            padding: 0px;
+        }
+        ul li
+        {
+            float: left;
+            background-color: #2B2C2D;
+            height: 50px;
+            width: 190px;
+            line-height: 400%;
+            font-size:80%;
+
+
+        }
+        ul li a:hover
+        {
+            background-color: #00bcd4;
+        }
+        ul  li  ul  li
+        {
+            display: none;
+        }
+        ul li ul li ul li ul li{
+            display: none;
+        }
+        ul li:hover ul li
+        {
+            display: table;
+        }
+        #dfg
+        {
+            width: 99%;
+            height: 72px;
+            background-color: #e91e63;
+            position:absolute;
+            top:100px;
+            right: 0px;
+            left: 3px;
+        }
+        #ss
+        {
+            background-color: #9AC9D8;
+            width:100%;
+            height:120px;
+        }
+        .ll{background-color: black;}
+        .ll:hover{background-color: red;}
+        #sg{
+        .ll{background-color: black;}
+        .ll:hover{background-color: red;}
+        }
+        .ggh
+        {
+            width: 4%;
+            height: 71px;
+            background-color: #9c27b0;
+        }
+        .ggh:hover
+        {
+            width: 4%;
+            height: 71px;
+            background-color:greenyellow;
+        }
+        .WORD{font-weight: bolder;font-size: medium;}
+        .dashboard
+        {
+            font-size: 100%;
+            font-weight: bolder;
+            font-family: bold;
+        }
+        .dashboard:hover
+        {
+            font-size: 100%;
+            font-weight: bolder;
+            font-family: bold;
+            color: #e91e63;
+        }
+        .user
+        {
+            font-size: 100%;
+            font-weight: bolder;
+            font-family: bold;
+        }
+        .user:hover
+        {
+            font-size: 100%;
+            font-weight: bolder;
+            font-family: bold;
+            color: #e91e63;
+        }
+        .manage
+        {
+            font-size: 100%;
+            font-weight: bolder;
+            font-family: bold;
+        }
+        .manage:hover
+        {
+            font-size: 100%;
+            font-weight: bolder;
+            font-family: bold;
+            color: #e91e63;
+        }
+        .student
+        {
+            font-size: 100%;
+            font-weight: bolder;
+            font-family: bold;
+        }
+        .student:hover
+        {
+            font-size: 100%;
+            font-weight: bolder;
+            font-family: bold;
+            color: #e91e63;
+            font-style: normal;
+        }
+        .course
+        {
+            font-size: 100%;
+            font-weight: bolder;
+            font-family: bold;
+        }
+        .course:hover
+        {
+            font-size: 100%;
+            font-weight: bolder;
+            font-family: bold;
+            color: #e91e63;
+        }
+        .fee
+        {
+            font-size: 100%;
+            font-weight: bolder;
+            font-family: bold;
+        }
+        .fee:hover
+        {
+            font-size: 100%;
+            font-weight: bolder;
+            font-family: bold;
+            color: #e91e63;
+        }
+        .subject
+        {
+            font-size: 100%;
+            font-weight: bolder;
+            font-family: bold;
+        }
+        .subject:hover
+        {
+            font-size: 100%;
+            font-weight: bolder;
+            font-family: bold;
+            color: #e91e63;
+        }
+        .sendmail
+        {
+            font-size: 100%;
+            font-weight: bolder;
+            font-family: bold;
+        }
+        .sendmail:hover
+        {
+            font-size: 100%;
+            font-weight: bolder;
+            color: #e91e63;
+        }
+        .studentreport
+        {
+            font-size: 100%;
+            font-weight: bolder;
+            font-family: bold;
+
+        }
+        .studentreport:hover
+        {
+            font-size: 100%;
+            font-weight: bolder;
+            font-family: bold;
+
+            color: #e91e63;
+        }
+        .pp
+        {
+            position: absolute;
+            length:top: opx;
+        }
+        img
+        {
+            margin:2px auto;
+            display: block;
+            border: solid;
+        }
+        .img:hover
+        {
+            background-color: #00FF00;
+            border-color: red;
+            width: 105;
+            height: 103;
+        }
+        .admin
+        {
+            margin:2px auto;
+            display: block;
+        }
+        .ff {
+            align-content: center;
+        }
+
+        .cv
+        {
+            font-style: italic;
+            font-size: medium;
+            font-weight: 800;
+            color: red;
+            font-size: 150%;
+            position: absolute;
+            top: 350px;
+            left: 180px;
+
+        }
+        .cv:hover
+        {
+            font-style: normal;
+            color: #202050;
+
+        }
+        .img1
+        {
+            margin:2px auto;
+            display: block;
+            border: solid;
+            position: absolute;
+            top:260px;
+            left:180px;
+        }
+        .img1:hover
+        {
+            background-color: #00FF00;
+            border-color: red;
+            width: 105;
+            height: 103;
+        }
+        .gmail
+        {
+            position: absolute;
+            margin:2px auto;
+            display: block;
+            border: solid;
+            top: 195px;
+            left:280px;
+        }
+        .gmail:hover
+        {
+            background-color: #00FF00;
+            border-color: red;
+            width: 105;
+            height: 103;
+
+        }
+        .cv2
+        {
+            position: absolute;
+            margin:2px auto;
+            top: 320px;
+            left:280px;
+            font-size: medium;
+            font-weight: 800;
+            color: red;
+            font-size: 150%;
+            font-style: italic;
+            text-decoration: underline;
+            text-decoration-color: #202050;
+        }
+        .cv2:hover
+        {
+            font-style: normal;
+            color: #202050;
+
+        }
+        .img2
+        {
+            margin:2px auto;
+            display: block;
+            border: solid;
+            position: absolute;
+            top:260px;
+            left:570px;
+        }
+        .img2:hover
+        {
+            background-color: #00FF00;
+            border-color: red;
+            width: 105;
+            height: 103;
+        }
+        .cv3
+        {
+            font-style: italic;
+            font-size: medium;
+            font-weight: 800;
+            color: red;
+            font-size: 150%;
+            position: absolute;
+            top: 350px;
+            left: 540px;
+        }
+        .cv3:hover
+        {
+            font-style: normal;
+            color: #202050;
+        }
+        .text1
+        {
+            width: 20%;
+            position: absolute;
+            top: 120px;
+            left: 0px;
+
+        }
+        .name1
+        {
+            position: absolute;
+            position: absolute;
+            top: 80px;
+            left: 0px;
+            color: black;
+            font-weight: 800;
+        }
+        .name2
+        {
+            position: absolute;
+            position: absolute;
+            top: 80px;
+            left: 300px;
+            color: black;
+            font-weight: 800;
+        }
+        .text2
+        {
+            width: 20%;
+            position: absolute;
+            top: 120px;
+            left: 300px;
+        }
+        .name3
+        {
+            position: absolute;
+            position: absolute;
+            top: 80px;
+            left: 600px;
+            color: black;
+            font-weight: 800;
+        }
+        .text3
+        {
+            width: 20%;
+            position: absolute;
+            top: 120px;
+            left: 600px;
+        }
+        .name4
+        {
+            position: absolute;
+            top: 160px;
+            left: 0px;
+            color: black;
+            font-weight: 800;
+        }
+        .text4
+        {
+            position: absolute;
+            top: 200px;
+            left: 0px;
+            color: black;
+        }
+        .name5
+        {
+            position: absolute;
+            top: 240px;
+            left: 0px;
+            color: black;
+            font-weight: 800;
+
+        }
+        .text5
+        {
+            position: absolute;
+            top: 280px;
+            left: 0px;
+            color: black;
+
+        }
+        .name6{
+            position: absolute;
+            top: 320px;
+            left: 0px;
+            color: black;
+            font-weight: 800;
+        }
+        .text6
+        {
+            position: absolute;
+            top: 360px;
+            left: 0px;
+            color: black;
+
+        }
+        .name7
+        {
+            position: absolute;
+            top: 400px;
+            left: 0px;
+            color: black;
+            font-weight: 800;
+        }
+        .text7
+        {
+            position: absolute;
+            top: 440px;
+            left: 0px;
+            color: black;
+        }
+        .name8
+        {
+            position: absolute;
+            top: 480px;
+            left: 0px;
+            color: black;
+            font-weight: 800;
+        }
+        .text8
+        {
+            position: absolute;
+            top: 520px;
+            left: 0px;
+            color: black;
+
+        }
+        .name9
+        {
+            position: absolute;
+            top: 560px;
+            left: 0px;
+            color: black;
+            font-weight: 800;
+        }
+        .text9
+        {
+            position: absolute;
+            top: 600px;
+            left: 0px;
+            color: black;
+        }
+        .btndanger
+        {
+            background-color: red;
+        }
+        .btn {
+            border: none;
+            color: black;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .danger {background-color: #4444CC ;position: absolute;
+            top: 700px;} /* Red */
+        .danger:hover {background-color: #0000FF}
+        .danger2 {background-color: #9c27b0; position: absolute;
+            top: 700px; left: 170px} /* Red */
+        .danger2:hover {background-color: #4444CC}
+    </style>
+
+</head>
+<body bgcolor="#5f9ea0">
+<div id="myid">
+
+    <h1 align="center">colleage managment system </h1>
+</div>
+<div id="dfg">
+    <button type="button" class="ggh" onclick="" ><div ></div>
+        <div  ></div>
+        <div ></div></button>
+    <p class="name1">enter your father Name</p>
+        <input type="text" class="text1" placeholder="enter your father Name" align="left" required>
+        <p class="name2">middel Name</p>
+        <input type="text" class="text2" placeholder="middel Name" align="left" required>
+        <p class="name3">last Name</p>
+        <input type="text" class="text3" placeholder="last Name" align="left" required>
+        <p class="name4">your father qualification</p>
+        <input type="text" class="text4" placeholder="your father qualification" align="left" required>
+        <p class="name5">your father birth date</p>
+        <input type="text" class="text5" placeholder="your father birth date" align="left" required>
+        <p class="name6">your father job profile</p>
+        <input type="text" class="text6" placeholder="your father job profile" align="left" required>
+        <p class="name7">your mother name</p>
+        <input type="text" class="text7" placeholder="your mother name" align="left" required>
+        <p class="name8">your mother birth date</p>
+        <input type="text" class="text8" placeholder="your mother birth date" align="left" required>
+        <p class="name9">your mother job profile</p>
+        <input type="text" class="text9" placeholder="your mother job profile" align="left" required>
+    <button type="submit"  class="btn danger" >submit</button>
+    <button type="reset"  class="btn danger2" >Cancel</button>
+
+    <div id="gajjar">
+        <br/>
+        <br>
+        <a href="#"> <p class="dashboard" align="center">@DASHBOARD</p></a>
+        <br/>
+        <br/>
+        <a href="#"> <p class="user" align="center">^user registration</p></a>
+        <br/>
+        <br/>
+        <a href="#"> <p class="manage" align="center">!manage user</p></a>
+        <br/>
+        <br/>
+        <a href="#"> <p class="student" align="center">$student fee deposit</p></a>
+        <br/>
+        <br/>
+        <a href="#"> <p class="course" align="center">&manage the course name</p></a>
+        <br/>
+        <br/>
+        <a href="#"> <p class="fee" align="center">#manage the colleage fee</p></a>
+        <br/>
+        <br/>
+        <a href="#"> <p class="fee" align="center" >Émange the subject</p></a>
+        <br/>
+        <br/>
+        <a href="#"> <p class="subject" align="center">?send mail</p></a>
+        <br/>
+        <br/>
+        <a href="#"> <p class="sendmail" align="center">::student report</p></a>
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="90" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+        <br/>
+        <br/>
+    </div>
+
+
+</body>
+</html>
